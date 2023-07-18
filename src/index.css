@@ -1,0 +1,116 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1em;
+  overflow-x: hidden;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --main-bg-color: rgba(22, 34, 68, 1);
+  --main-bg-black-color: rgba(6,16,24,1);
+  --main-bg-light-color: rgba(38, 48, 100, 1);
+  --main-bg-alt-color: rgba(33, 55, 112, 1);
+  --main-bg-alt-light-color: rgba(166, 222, 255, .87);
+
+}
+
+html {scroll-snap-type: y mandatory}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+  color: rgba(255,255,255, 0.87);
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: var(--main-bg-light-color);
+  color: rgba(255,255,255, 1);
+  
+}
+
+button:not(:hover) {
+  transition: all 0.2s ease-in-out;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 3000px) {
+  :root {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 1920px) {
+  :root {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 1600px) {
+  :root {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {scroll-snap-type: none}
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: .8em;
+  }
+}

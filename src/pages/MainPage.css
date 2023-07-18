@@ -1,0 +1,16 @@
+.MainPage {
+  background-color: var(--main-bg-light-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  scroll-snap-align: none;
+  
+}
+
+@media (max-width: 1080px) {
+  .MainPage {
+    margin-left: 0rem;
+  }
+
+}

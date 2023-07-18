@@ -1,0 +1,17 @@
+.ProjectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+    gap: 12rem;
+    scroll-snap-align: none;
+
+}
+@media (max-width: 1080px) {
+    .ProjectContainer {
+        
+    }
+}

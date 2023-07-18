@@ -1,0 +1,70 @@
+.Portrait {
+}
+
+.Portrait-Frame {
+  margin: 2rem;
+  width: 28.8rem;
+  height: 28.8rem;
+  border-radius: 3rem;
+  aspect-ratio: 1;
+  background-color: var(--main-bg-alt-light-color);
+  z-index: 5;
+}
+
+.Portrait-Text {
+}
+
+.Portrait-Text img {
+  max-width: 24rem;
+  border-radius: 2rem;
+  margin: 1.8rem
+}
+
+@media (min-width: 2000px) {
+  .Portrait {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .Portrait {
+  }
+  .Portrait-Frame {
+    width: 21.2rem;
+    height: 21.1rem;
+    border-radius: 1rem;
+  }
+  .Portrait-Text img {
+    max-width: 18rem;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .Portrait {
+  }
+  .Portrait-Frame {
+    width: 19.2rem;
+    height: 19.1rem;
+    border-radius: 1rem;
+  }
+  .Portrait-Text img {
+    max-width: 16rem;
+    border-radius: 1rem;
+    margin: 1.2rem
+  }
+}
+
+@media (min-width: 3000px) {
+  .Portrait-Frame {
+    width: 29.2rem;
+    height: 29.1rem;
+    border-radius: 1rem;
+  }
+  .Portrait-Text img {
+    max-width: 25rem;
+    border-radius: 1rem;
+    margin: 1.2rem
+  }
+}
