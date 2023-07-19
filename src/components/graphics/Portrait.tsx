@@ -12,7 +12,6 @@ const Portrait = () => {
         className="Portrait"
       >
         <motion.div
-          transition={{ duration: 7, type: "spring", stiffness: 55 }}
           className="Portrait-Frame"
         >
           <motion.h1
@@ -23,7 +22,6 @@ const Portrait = () => {
             <motion.img
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, type: "spring", stiffness: 55 }}
               src={portraitImage}
               alt="Portrait of Brad"
             ></motion.img>

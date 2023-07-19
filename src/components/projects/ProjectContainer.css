@@ -8,6 +8,7 @@
     margin-bottom: 18rem;
     gap: 12rem;
     scroll-snap-align: none;
+    
 
 }
 @media (max-width: 1080px) {
@@ -15,3 +16,20 @@
         
     }
 }
+
+@media (min-width: 2000px) {
+    .ProjectContainer {
+      margin-top: 28rem;
+      margin-bottom: 28rem;
+      gap: 24rem;
+    }
+  }
+  
+  @media (min-width: 3000px) {
+    .ProjectContainer {
+        margin-top: 42rem;
+        margin-bottom: 42rem;
+        gap: 36rem;
+      }
+  }
+  

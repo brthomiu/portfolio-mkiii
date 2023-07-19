@@ -10,7 +10,7 @@ const ProjectContainer = () => {
     <>
       <div className="ProjectContainer">
         {projectList.map((project) => (
-          <Project project={project} />
+          <Project project={project} key={project.name} />
         ))}
       </div>
     </>

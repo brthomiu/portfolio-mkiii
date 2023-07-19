@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 1em;
@@ -7,7 +7,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,14 +15,15 @@
   -webkit-text-size-adjust: 100%;
 
   --main-bg-color: rgba(22, 34, 68, 1);
-  --main-bg-black-color: rgba(6,16,24,1);
+  --main-bg-black-color: rgba(6, 16, 24, 1);
   --main-bg-light-color: rgba(38, 48, 100, 1);
   --main-bg-alt-color: rgba(33, 55, 112, 1);
-  --main-bg-alt-light-color: rgba(166, 222, 255, .87);
-
+  --main-bg-alt-light-color: rgba(166, 222, 255, 0.87);
 }
 
-html {scroll-snap-type: y mandatory}
+html {
+  scroll-snap-type: y mandatory;
+}
 
 a {
   font-weight: 500;
@@ -51,13 +52,12 @@ button {
   font-family: inherit;
   background-color: var(--main-bg-color);
   cursor: pointer;
-  color: rgba(255,255,255, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   transition: border-color 0.25s;
 }
 button:hover {
   background-color: var(--main-bg-light-color);
-  color: rgba(255,255,255, 1);
-  
+  color: rgba(255, 255, 255, 1);
 }
 
 button:not(:hover) {
@@ -89,7 +89,7 @@ button:focus-visible {
 
 @media (max-width: 1920px) {
   :root {
-    font-size: 1.0em;
+    font-size: 1em;
   }
 }
 
@@ -100,17 +100,19 @@ button:focus-visible {
 }
 
 @media (max-width: 1080px) {
-  html {scroll-snap-type: none}
+  /* html {
+    scroll-snap-type: none;
+  } */
 }
 
 @media (max-width: 720px) {
   :root {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 400px) {
   :root {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }

@@ -1,11 +1,33 @@
 .MainPage {
-  background-color: var(--main-bg-light-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
   scroll-snap-align: none;
+	background: linear-gradient(45deg, #0B2447, #19376D, #576CBC, #A5D7E8);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.Page-Container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(22, 34, 68, .7);
   
+
 }
 
 @media (max-width: 1080px) {

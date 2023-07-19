@@ -18,7 +18,7 @@ export const projectList: IProject[] = [
   {
     name: "Stön Recipe Notes",
     list: ["TypeScript", "React", "Redux", "NodeJS", "MongoDB"],
-    body:       "A platform to help cooks and chefs develop better recipes. Stön is built with React and utilizes Redux Toolkit for client-side state management. Data is housed on a MongoDB cluster, and accessed through API endpoints on a Node/Express backend.",
+    body:       "A platform to help cooks and chefs develop better recipes. Stön is a full stack web application built with TypeScript, React, and NodeJS.",
     image: ston1,
     repoLink: "https://github.com/brthomiu/Ston-Pizza-Notes",
     liveLink: "https://recipes2023.herokuapp.com/",
@@ -27,7 +27,7 @@ export const projectList: IProject[] = [
   {
     name: "Full Stack Task List",
     list: ["JavaScript", "React", "Redux", "NodeJS", "MongoDB"],
-    body: "Full stack task list webapp using NodeJS, React, Express, and MongoDB. Uses Redux Toolkit for state management and JSON Web Tokens for authentication.",
+    body: "Full stack task list webapp using NodeJS, React, Express, and MongoDB. Uses Redux for state management and JSON Web Tokens for authentication.",
     image: taskList1,
     repoLink: "https://github.com/brthomiu/Full-Stack-Task-List",
     liveLink: "https://restfulmern2022.herokuapp.com/login",

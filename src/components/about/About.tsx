@@ -1,12 +1,10 @@
 import Portrait from "../graphics/Portrait";
 import "./About.css";
 import { motion } from "framer-motion";
-import resume from "../../assets/BradThompsonResume.pdf"
-
 
 const About = () => {
   return (
-    <div className="About">
+    <section id="About" className="About">
       <div className="About-Container">
         <Portrait />
         <motion.div
@@ -16,8 +14,8 @@ const About = () => {
         >
           <h1>Brad Thompson</h1>
           <p>
-            This is the about me section, it is going to have all of the about
-            information contained on the page.
+            Whether writing code, building applications, or designing content,
+            I'm passionate about using technology to turn dreams into reality.
           </p>
           <div className="About-Buttons">
             <a
@@ -25,26 +23,19 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button>GitHub</button>
+              GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/brthomiu/"
               target="_blank"
               rel="noreferrer"
             >
-              <button>LinkedIn</button>
-            </a>
-            <a
-              href={resume}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button>Resume</button>
+              LinkedIn
             </a>
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

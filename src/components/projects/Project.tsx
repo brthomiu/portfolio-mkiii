@@ -1,6 +1,6 @@
 import "./Project.css";
 import { IProject } from "./projectList";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export interface IProjectProps {
@@ -8,41 +8,36 @@ export interface IProjectProps {
 }
 
 const Project: React.FC<IProjectProps> = ({ project }) => {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const opacity = useTransform(
-    scrollYProgress,
-    [0, 0.3, 0.6, 1],
-    [1, 0.9, 0.7, 0]
-  );
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   return (
-    <motion.div style={{ opacity }} className="Project">
-      <div className="Project-Top">
-        <img src={project.image}></img>
+    <motion.div
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 5, type: "spring", stiffness: 55 }}
+      className="Project"
+    >
+      <div ref={ref} className="Project-Top">
+        <img src={project.image} alt={`${project.name} screenshot`}></img>
       </div>
       <div className="Project-Bottom">
         <div className="Project-Body">
-          <h2 ref={targetRef}>{project.name}</h2>
+          <h2>{project.name}</h2>
           <div className="Project-List">
             {project.list.map((listItem) => (
-              <h3>{listItem}</h3>
+              <h3 key={listItem} >{listItem}</h3>
             ))}
           </div>
           <p>{project.body}</p>
         </div>
         <div className="Project-Links">
-        <a href={project.repoLink} target="_blank" rel="noreferrer">
-            <button>GitHub</button>
+          <a href={project.repoLink} target="_blank" rel="noreferrer">
+            GitHub
           </a>
 
           <a href={project.liveLink} target="_blank" rel="noreferrer">
-            <button>Live Demo</button>
+            Live Demo
           </a>
-
         </div>
       </div>
     </motion.div>

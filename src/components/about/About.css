@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   z-index: 20;
-  height: 70rem;
+  height: 30rem;
   scroll-snap-align: start;
   scroll-margin: 300px;
 }
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 38rem;
   max-width: 25rem;
 }
 
@@ -36,15 +36,45 @@
   gap: 1rem;
 }
 
+.About a {
+  border-radius: 8px;
+  border: none;
+  padding: 1rem 1.2rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--main-bg-color);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.87);
+  transition: border-color 0.25s;
+}
+.About a:hover {
+  background-color: var(--main-bg-light-color);
+  color: rgba(255, 255, 255, 1);
+}
+
+.About a:not(:hover) {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1500px) {
+
+  .About-Body {
+    margin-top: 25rem;
+  }
+  
+}
+
 @media (max-width: 1080px) {
   .About {
     flex-direction: column;
     width: 100%;
-    height: 45rem;
-    padding-bottom: 16rem;
+    height: 28rem;
+    padding-top: 6rem;
   }
   .About h1 {
-    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
   }
   .About-Container {
     flex-direction: column;
@@ -58,20 +88,22 @@
     max-width: 22rem;
   }
 
+  .About-Buttons {
+    display: none;
+  }
+
   
 }
 
 @media (min-width: 2000px) {
-  .About {
-    height: 85rem;
+  .About-Body {
+    margin-top: 42rem;
+
   }
 }
 
 @media (min-width: 3000px) {
-  .About {
-    height: 165rem;
-  }
   .About-Body {
-    margin-top: -60rem;
+    margin-top: 46rem;
   }
 }

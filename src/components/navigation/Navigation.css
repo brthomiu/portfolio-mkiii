@@ -2,37 +2,40 @@
   color: rgba(255, 255, 255, 0.87);
   position: fixed;
   background-color: var(--main-bg-color);
-
+  display: flex;
+  flex-direction: column;
   width: 1.2rem;
   height: 100%;
   z-index: 100;
-  padding: 0rem 1rem;
+  padding: 0rem 1.5rem 0rem 1rem;
 }
 
 .Navigation h3 {
   margin-bottom: 2rem;
 }
 
-.Navigation button {
-  margin: 1rem 0 1rem;
+.Navigation a {
+  margin: 2rem 0 1rem .25rem;
   padding: 0;
+  color: rgba(255,255,255, 0.75);
   scale: 150%;
-  color: rgba(255,255,255, 0.75)
 }
 
-.Navigation button:hover {
+.Navigation a:hover {
   background-color: var(--main-bg-color);
-  margin-top: 1rem;
   padding: 0;
   color: rgba(255,255,255, 1)
 
 }
 
-.Navigation button:not(:hover) {
+.Navigation a:not(:hover) {
   transition: all .2s ease-in-out;
 }
 
 @media (max-width: 1080px) {
+  /* .Navigation {
+    display: none;
+  } */
   .Navigation {
     color: rgba(255, 255, 255, 0.87);
     position: fixed;
@@ -41,17 +44,18 @@
     justify-content: space-around;
     background-color: var(--main-bg-color);
     width: 100%;
-    height: 6rem;
+    height: 0rem;
     z-index: 100;
     bottom: 0rem;
-    padding: 0rem;
+    padding: 0rem 0 4rem;
   }
   .Navigation h3 {
     font-size: 1.8rem;
   }
 
-  .Navigation button {
+  .Navigation a {
     scale: 150%;
+    transform: translateY(-.5rem);
   }
 
 }

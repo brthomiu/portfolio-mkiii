@@ -1,0 +1,24 @@
+.Spacer {
+  background: var(--main-bg-black-color);
+  width: 100%;
+  height: 40rem;
+}
+
+
+@media (max-width: 1080px) {
+    .Spacer {
+      height: 40rem;
+    }
+  }
+
+@media (min-width: 2000px) {
+  .Spacer {
+    height: 56rem;
+  }
+}
+
+@media (min-width: 3000px) {
+  .Spacer {
+    height: 100rem;
+  }
+}
