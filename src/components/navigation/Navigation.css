@@ -56,6 +56,12 @@
   .Navigation a {
     scale: 150%;
     transform: translateY(-.5rem);
+    padding: 2rem;
+    margin-top: 0;
+  }
+
+  .Navigation-Home {
+    display: none;
   }
 
 }

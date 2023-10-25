@@ -11,9 +11,7 @@ const Portrait = () => {
         transition={{ duration: 7, type: "spring", stiffness: 55 }}
         className="Portrait"
       >
-        <motion.div
-          className="Portrait-Frame"
-        >
+        <motion.div className="Portrait-Frame">
           <motion.h1
             className="Portrait-Text"
             animate={{ scale: 1.2 }}

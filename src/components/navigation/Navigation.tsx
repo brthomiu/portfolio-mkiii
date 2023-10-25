@@ -5,7 +5,7 @@ import { FiGithub } from "react-icons/fi";
 const Navigation = () => {
   return (
     <div className="Navigation">
-      <a href="#About" rel="noreferrer" title="Home">
+      <a href="#About" rel="noreferrer" title="Home" className="Navigation-Home">
         <AiOutlineHome />
       </a>
 

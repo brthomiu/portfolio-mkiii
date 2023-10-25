@@ -25,16 +25,18 @@ const Project: React.FC<IProjectProps> = ({ project }) => {
           <h2>{project.name}</h2>
           <div className="Project-List">
             {project.list.map((listItem) => (
-              <h3 key={listItem} >{listItem}</h3>
+              <h3 key={listItem}>{listItem}</h3>
             ))}
           </div>
-          <p>{project.body}</p>
+          <p className="Project-Body-Text">{project.body}</p>
+          <div className="Project-Details">
+            <p>{project.details}</p>
+          </div>
         </div>
         <div className="Project-Links">
           <a href={project.repoLink} target="_blank" rel="noreferrer">
             GitHub
           </a>
-
           <a href={project.liveLink} target="_blank" rel="noreferrer">
             Live Demo
           </a>

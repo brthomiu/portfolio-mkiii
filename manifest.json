@@ -1,0 +1,22 @@
+{
+  "name": "bradthompsonweb.dev",
+  "short_name": "btweb",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "natural",
+  "start_url": "https://bradthompsonweb.dev/",
+  "background_color": "#162244",
+  "theme_color": "#263064",
+  "display": "standalone",
+  "description": "Brad's portfolio.",
+  "icons": [
+    {
+      "src": "/192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/512.png",
+      "sizes": "512x512"
+    }
+  ]
+}

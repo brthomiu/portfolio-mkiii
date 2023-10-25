@@ -17,52 +17,73 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 38rem;
-  max-width: 25rem;
+  max-width: 26rem;
 }
 
 .About h1 {
-  margin-bottom: -.5rem;
+  transform: translate(0, -4rem);
+  margin-bottom: -0.5rem;
+  cursor: default;
 }
 
 .About p {
   color: var(--main-bg-alt-light-color);
   text-wrap: balance;
   font-size: 1.1rem;
+  cursor: default;
 }
 
-.About-Buttons {
+.About-Typewriter-Container {
+  transform: translate(0, -4rem);
   display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
+  flex-direction: row;
+  color: var(--main-bg-alt-light-color);
+  text-wrap: balance;
+  font-size: 1.1rem;
 }
 
-.About a {
-  border-radius: 8px;
-  border: none;
-  padding: 1rem 1.2rem;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--main-bg-color);
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.87);
-  transition: border-color 0.25s;
-}
-.About a:hover {
-  background-color: var(--main-bg-light-color);
-  color: rgba(255, 255, 255, 1);
+.About-Typewriter {
+  transform: translate(0, 1.1rem);
+  color: var(--main-bg-alt-light-color);
+  text-wrap: balance;
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+  cursor: default;
 }
 
-.About a:not(:hover) {
-  transition: all 0.2s ease-in-out;
+.About-Typewriter-Screenreader {
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  cursor: default;
 }
 
+.About-Typewriter-Screenreader p {
+  color: rgba(0, 0, 0, 0);
+  cursor: default;
+}
+
+.About-Scrolldown {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.About-Scrolldown h3 {
+  margin-bottom: .25rem;
+  cursor: default;
+  font-weight: 400;
+}
+
+.About-Scrolldown-Arrow {
+  margin: auto;
+  transform: scale(400%, 150%);
+  color: var(--main-bg-alt-light-color);
+}
 @media (max-width: 1500px) {
-
   .About-Body {
     margin-top: 25rem;
   }
-  
 }
 
 @media (max-width: 1080px) {
@@ -70,15 +91,19 @@
     flex-direction: column;
     width: 100%;
     height: 28rem;
-    padding-top: 6rem;
+    padding-top: 2rem;
   }
   .About h1 {
     margin-top: 2rem;
     font-size: 2.2rem;
+    transform: translate(0, -2rem);
   }
   .About-Container {
     flex-direction: column;
     margin: auto;
+  }
+  .About-Typewriter-Container {
+    transform: translate(0, -2rem);
   }
   .About-Body {
     margin-top: 2rem;
@@ -92,13 +117,15 @@
     display: none;
   }
 
-  
+  .About-Scrolldown{
+    bottom: 6rem;
+    align-self: center;
+  }
 }
 
 @media (min-width: 2000px) {
   .About-Body {
     margin-top: 42rem;
-
   }
 }
 

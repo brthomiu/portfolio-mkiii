@@ -20,6 +20,10 @@
   text-wrap: balance;
 }
 
+.Project-Body-Text {
+  font-weight: 600;
+}
+
 .Project img {
   max-width: 32rem;
   margin: auto;
@@ -73,7 +77,9 @@
   transition: all 0.2s ease-in-out;
 }
 
-
+.Project-Details {
+  color: var(--main-bg-alt-light-color);
+}
 
 .Project-List {
   display: flex;
@@ -127,11 +133,23 @@
     scroll-snap-align: start;
 
   }
+  
+  .Project a {
+    height: 2rem;
+  }
+
+  .Project-Details {
+    display: none;
+  }
 
 .Project-Top {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+}
+
+.Project-Body {
+  min-width: 22rem;
 }
 
 .Project-Bottom {
@@ -146,6 +164,7 @@
 
 .Project-List {
   width: 80%;
+  gap: .8rem;
 }
 
   .Project img {
@@ -167,6 +186,7 @@
   .Project-Links {
     justify-content: center;
     gap: 15%;
+    margin-top: .7rem;
   }
 
   .Project-Links button {
