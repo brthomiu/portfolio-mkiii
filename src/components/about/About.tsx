@@ -52,7 +52,7 @@ const About = () => {
                     .pauseFor(2500)
                     .deleteAll()
                     .pauseFor(150)
-                    .typeString("Tailwind CSS")
+                    .typeString("CSS")
                     .pauseFor(2500)
                     .deleteAll()
                     .pauseFor(150)
@@ -92,7 +92,7 @@ const About = () => {
         transition={{ delay: 2.5, duration: 5 }}
         className="About-Scrolldown"
       >
-        <h3>See Portfolio</h3>
+        <h2>See Portfolio</h2>
         <BiSolidDownArrow className="About-Scrolldown-Arrow" />
       </motion.div>
     </section>

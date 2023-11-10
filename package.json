@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "deploy": "scp -r /c/Users/brtho/Repositories/portfolio3/dist/. dh_m96q2p@bradthompsonweb.dev:/home/dh_m96q2p/bradthompsonweb.dev",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

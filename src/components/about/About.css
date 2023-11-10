@@ -24,6 +24,8 @@
   transform: translate(0, -4rem);
   margin-bottom: -0.5rem;
   cursor: default;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .About p {
@@ -49,6 +51,9 @@
   font-size: 1.1rem;
   margin-right: 0.2rem;
   cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .About-Typewriter-Screenreader {
@@ -60,6 +65,9 @@
 .About-Typewriter-Screenreader p {
   color: rgba(0, 0, 0, 0);
   cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .About-Scrolldown {
@@ -69,9 +77,10 @@
   flex-direction: column;
 }
 
-.About-Scrolldown h3 {
+.About-Scrolldown h2 {
   margin-bottom: .25rem;
   cursor: default;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
