@@ -4,6 +4,7 @@ import movie1 from "../../assets/movie1.png";
 import calculon1 from "../../assets/calculon1.png";
 import vinyl from "../../assets/vinyl.png";
 import jimmy from "../../assets/jimmy.png";
+import grid1 from "../../assets/grid1.gif";
 
 export interface IProject {
   name: string;
@@ -13,9 +14,22 @@ export interface IProject {
   image: string;
   liveLink: string;
   repoLink: string;
+  caption?: string;
 }
 
 export const projectList: IProject[] = [
+  {
+    name: "Grid-Space",
+    list: ["Go", "TypeScript", "React", "SQL", "Websocket"],
+    body: "A full-stack concurrent multiplayer web application designed for interactive gaming experiences.",
+    details:
+      "Grid Space utilizes a robust Go server to manage message batching, execute game logic, and maintain secure SQLite storage, guaranteeing data integrity for all players. A TypeScript/React client enables seamless player interaction by dynamically rendering content as data is received from the server.",
+    image: grid1,
+    repoLink: "https://github.com/brthomiu/grid-space/",
+    liveLink: "https://brthomiu.github.io/grid-space/",
+    caption: "Demonstration of concurrency between multiple clients."
+  },
+
   {
     name: "Stön Recipe Notes",
     list: ["TypeScript", "React", "Redux", "NodeJS", "MongoDB"],

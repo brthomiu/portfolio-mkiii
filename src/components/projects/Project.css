@@ -7,7 +7,6 @@
   margin-bottom: 8rem;
   border-radius: 1rem;
   scroll-snap-align: center;
-
 }
 
 .Project h1 {
@@ -38,6 +37,18 @@
 .Project-Top {
   flex-direction: column;
   margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Project-Caption {
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.Project-Caption p {
+  font-style: italic;
 }
 
 .Project-Bottom {
@@ -138,9 +149,8 @@
     margin-top: -3rem;
     border-radius: 0;
     scroll-snap-align: start;
-
   }
-  
+
   .Project a {
     height: 2rem;
   }
@@ -149,30 +159,33 @@
     display: none;
   }
 
-.Project-Top {
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-}
+  .Project-Top {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
 
-.Project-Body {
-  min-width: 22rem;
-}
+  .Project-Caption {
+    display: none;
+  }
 
-.Project-Bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0rem;
-  max-width: 90%;
-  margin: auto;
+  .Project-Body {
+    min-width: 22rem;
+  }
 
-}
+  .Project-Bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0rem;
+    max-width: 90%;
+    margin: auto;
+  }
 
-.Project-List {
-  width: 80%;
-  gap: .8rem;
-}
+  .Project-List {
+    width: 80%;
+    gap: 0.8rem;
+  }
 
   .Project img {
     max-width: 100%;
@@ -193,7 +206,7 @@
   .Project-Links {
     justify-content: center;
     gap: 15%;
-    margin-top: .7rem;
+    margin-top: 0.7rem;
   }
 
   .Project-Links button {

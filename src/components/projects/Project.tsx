@@ -19,6 +19,7 @@ const Project: React.FC<IProjectProps> = ({ project }) => {
     >
       <div ref={ref} className="Project-Top">
         <img src={project.image} alt={`${project.name} screenshot`}></img>
+        <p className="Project-Caption">{project.caption}</p>
       </div>
       <div className="Project-Bottom">
         <div className="Project-Body">
